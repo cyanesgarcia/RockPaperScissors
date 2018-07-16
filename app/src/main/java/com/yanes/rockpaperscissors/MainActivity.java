@@ -30,8 +30,8 @@ public class MainActivity extends Activity {
         total_money = intent.getIntExtra(RockPaperScissors.STotalMoney, 0);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        TextView tv = (TextView) findViewById(R.id.totalmoney);
+        TextView tv;
+        tv = (TextView) findViewById(R.id.totalmoney);
         tv.setText("" + total_money);
         tv = (TextView) findViewById(R.id.gamemoney);
         tv.setText("" + game_money);
